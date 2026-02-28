@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+
+    <!-- Título para el navegador y los buscadores -->
+    <title>Clase 10 - Formularios</title>
+
+    <!-- Descripción de la página para los buscadores -->
+    <meta name="description" content="Página de ejemplos vistos en clase 10: Texto en HTML">
+
+    <!-- Palabras clave para los buscadores -->
+    <meta name="keywords" content="p, h1, h2, h3, h4, h5">
+
+    <!-- Autor de la página -->
+    <meta name="author" content="@robertomartinez">
+
+    <!-- Favicon de la página -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Codificación-->
+    <meta charset="UTF-8">
+
+    <!-- Para que la web sea responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Para algunos navegadores móviles -->
+    <meta name="theme-color" content="#1e7bbf">
+
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos vistos en la Clase 11</h1>
+        <p><a href="11. index.html">👈Volver al índice de ejemplos</a></p>
+        <hr />
+    </header>
+
+    <main>
+
+    </main>
+    <h1>Tipo de fieldset</h1>
+    <form action="/registrar_cliente/" name="registro" method="get" autocomplete="off" enctype="multipart/form-data">
+        <input type="hidden" name="company" value="ConquerBlocks">
+        
+        <fieldset>
+            <legend>Nombre del usuario</legend>
+        <p>
+        Nombre
+        <input type="text" name="nombre" placeholder="Introduce tu nombre" size="15" autocomplete="off">
+        </p>
+        <p>
+        Apellidos
+        <input type="text" name="apellidos" placeholder="Introduce tus apellidos" size="25" autocomplete="off"><br />
+        </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Más información</legend>
+         <p>
+        País
+        <input type="text" name="país" placeholder="Introduce tu país" size="25" autocomplete="off"><br />
+        </p>
+         <p>
+        Edad
+        <input type="number" name="edad" min="0" max="100" step=".5" autocomplete="off">
+        </p>
+
+          <p>
+        <label for="bio">Biografía</label>
+        <textarea name="bio" id="bio" cols="60" rows="10" placeholder="Escribe aquí tu biografía..."></textarea>
+            </p>
+        </fieldset>
+
+        <br>
+        <button>Enviar</button>
+        <input type="submit" value="Enviar a otro sitio">
+        <input type="reset" value="Borrar todo el formulario">
+</form>
+    </form>
+
+</main>
+
+<hr>
+<footer>
+    25 de febrero del 2026.
+</footer>
+</body>
+
+</html>
